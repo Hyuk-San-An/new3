@@ -1,0 +1,208 @@
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3
+$ git init
+Initialized empty Git repository in D:/Phython Workspace/JupyterProject/git_test/new3/.git/
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git add .
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git commit -m "first commit"
+[master (root-commit) 2a34bb5] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 an.txt
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git branch main
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git remote
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git remote -v
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git remote add https://github.com/Hyuk-San-An/new3.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git remote add origin https://github.com/Hyuk-San-An/new3.git
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 23.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Hyuk-San-An/new3.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ ls
+an.txt  xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ ls
+an.txt  xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ ls
+an.txt  xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git add .
+warning: in the working copy of 'xlwings_uniq_list_0709.ipynb', LF will be replaced by CRLF the next time Git touches it
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git commit -m "xlwings created"
+[main 46c970d] xlwings created
+ 1 file changed, 9186 insertions(+)
+ create mode 100644 xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 5.16 KiB | 406.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Hyuk-San-An/new3.git
+   2a34bb5..46c970d  main -> main
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ ls
+an.txt  transmit_cost_0906-Copy2.ipynb  xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git checkout master
+Switched to branch 'master'
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ ls
+an.txt  transmit_cost_0906-Copy2.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ ls
+an.txt  transmit_cost_0906-Copy2.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git commit -m "transmit created"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        transmit_cost_0906-Copy2.ipynb
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git add .
+warning: in the working copy of 'transmit_cost_0906-Copy2.ipynb', LF will be replaced by CRLF the next time Git touches it
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git commit -m "transmit created"
+[main 19956d3] transmit created
+ 1 file changed, 95 insertions(+)
+ create mode 100644 transmit_cost_0906-Copy2.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git checkout master
+Switched to branch 'master'
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.37 KiB | 140.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Hyuk-San-An/new3.git
+   46c970d..19956d3  main -> main
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (master)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ ls
+Untitled.ipynb  an.txt  transmit_cost_0906-Copy2.ipynb  xlwings_uniq_list_0709.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git add .
+warning: in the working copy of 'Untitled.ipynb', LF will be replaced by CRLF the next time Git touches it
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git commit -m "untitiled created"
+[main ae829e7] untitiled created
+ 1 file changed, 2235 insertions(+)
+ create mode 100644 Untitled.ipynb
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 20.92 KiB | 1.74 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Hyuk-San-An/new3.git
+   19956d3..ae829e7  main -> main
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin temp
+error: src refspec temp does not match any
+error: failed to push some refs to 'https://github.com/Hyuk-San-An/new3.git'
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/Hyuk-San-An/new3/pull/new/master
+remote:
+To https://github.com/Hyuk-San-An/new3.git
+ * [new branch]      master -> master
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin mas
+error: src refspec mas does not match any
+error: failed to push some refs to 'https://github.com/Hyuk-San-An/new3.git'
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin master^C
+
+hyuksanan@PN-00096731-02 MINGW64 /d/Phython Workspace/JupyterProject/git_test/new3 (main)
+$ git push origin mas
